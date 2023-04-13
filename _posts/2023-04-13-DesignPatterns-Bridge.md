@@ -1,4 +1,19 @@
-##Description
+---
+layout: post
+title:  "Design Patterns | Bridge"
+categories: Design_Patterns
+tags:  Design_Patterns UML Java
+author: SHENYY
+---
+
+* content
+  {:toc}
+
+
+
+
+
+## Description
 
 The Bridge design pattern allows you to separate the abstraction from the implementation. It is a structural design pattern.
 
@@ -14,32 +29,32 @@ This is a design mechanism that encapsulates an implementation class inside an i
 * The abstraction contains a reference to the implementer. Children of the abstraction are referred to as refined abstractions, and children of the implementer are concrete implementers. Since we can change the reference to the implementer in the abstraction, we are able to change the abstraction’s implementer at run-time. Changes to the implementer do not affect client code.
 * It increases the loose coupling between class abstraction, and it’s implementation.
 
-##UML Diagram of Bridge Design Pattern
+## UML Diagram of Bridge Design Pattern
 
 ![](https://shenyy1993.github.io/blog/assets/Bridge_Design.png)
 
-##Elements of Bridge Design Pattern
+## Elements of Bridge Design Pattern
 
 * **Abstraction** – core of the bridge design pattern and defines the crux. Contains a reference to the implementer.
 * **Refined Abstraction** – Extends the abstraction takes the finer detail one level below. Hides the finer elements from implementers.
 * **Implementer** – It defines the interface for implementation classes. This interface does not need to correspond directly to the abstraction interface and can be very different. Abstraction imp provides an implementation in terms of operations provided by the Implementer interface.
 * **Concrete** Implementation – Implements the above implementer by providing the concrete implementation.
 
-##When we need bridge design pattern
+## When we need bridge design pattern
 
 The Bridge pattern is an application of the old advice, “prefer composition over inheritance”. It becomes handy when you must subclass different times in ways that are orthogonal with one another.
 
-##Without Bridge Design Pattern
+## Without Bridge Design Pattern
 
 But the above solution has a problem. If you want to change the Bus class, then you may end up changing ProduceBus and AssembleBus as well and if the change is workshop specific then you may need to change the Bike class as well.
 ![](https://shenyy1993.github.io/blog/assets/im2.png)
 
-##With Bridge Design Pattern
+## With Bridge Design Pattern
 
 You can solve the above problem by decoupling the Vehicle and Workshop interfaces in the below manner.
 ![](https://shenyy1993.github.io/blog/assets/BridgeDesign3.png)
 
-##Advantages
+## Advantages
 1. Bridge pattern decouple an abstraction from its implementation so that the two can vary independently.
 2. It is used mainly for implementing platform independence features.
 3. It adds one more method level redirection to achieve the objective.

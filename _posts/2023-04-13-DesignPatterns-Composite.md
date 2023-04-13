@@ -1,4 +1,19 @@
-##Description
+---
+layout: post
+title:  "Design Patterns | Composite"
+categories: Design_Patterns
+tags:  Design_Patterns UML Java
+author: SHENYY
+---
+
+* content
+{:toc}
+
+
+
+
+
+## Description
 
 Composite pattern is a partitioning design pattern and describes a group of objects that is treated the same way as a single instance of the same type of object. The intent of a composite is to “compose” objects into tree structures to represent part-whole hierarchies. It allows you to have a tree structure and ask each node in the tree structure to perform a task.
 
@@ -28,7 +43,7 @@ Composite design pattern treats each node in two ways:
 
 The above figure shows a typical Composite object structure. As you can see, there can be many children to a single parent i.e. Composite, but only one parent per child.
 
-##When to use Composite Design Pattern?
+## When to use Composite Design Pattern?
 
 Composite Pattern should be used when clients need to ignore the difference between compositions of objects and individual objects. If programmers find that they are using multiple objects in the same way, and often have nearly identical code to handle each of them, then composite is a good choice, it is less complex in this situation to treat primitives and composites as homogeneous.
 
