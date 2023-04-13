@@ -8,8 +8,8 @@
 # Site settings
 title: SHENYY1993
 brief-intro:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://shenyy1993.github.io/blog" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://shenyy1993.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
