@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Categories
-permalink: blog/category/
+permalink: category/
 icon: th-list
 type: page
 ---
@@ -16,7 +16,7 @@ type: page
             <h2 id="{{category | first}}">{{category | first}}</h2>
                 {% for posts in category  %}
                     {% for post in posts %}
-                        {% if post.url | prepend: site.baseurl %}
+                        {% if post.url %}
                         <li>
                             <time>
                             {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
