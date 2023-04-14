@@ -9,18 +9,23 @@ author: SHENYY
 * content
 {:toc}
 
-## 原理
+## 1.算法原理
 射线法判断一个点是否位于多边形内部的原理是，从待判断点发出一条向水平方向的射线，统计射线与多边形边界的交点数量。如果交点数量为奇数，则待判断点在多边形内部，否则在多边形外部。
-
-
-
 
 具体来说，可以先将多边形边界按照某一顺序排序，然后从待判断点向水平方向发出一条射线，统计射线与多边形边界的交点数量。对于每条多边形边界，如果其与射线有交点，则交点数量加一。如果交点数量为奇数，则待判断点在多边形内部，否则在多边形外部。
 
 射线法的优点是简单易懂，适用于凸多边形和凹多边形。但是需要注意，对于自交多边形，该方法可能会得到错误的结果。此时，更好的方法是使用其他算法，如扫描线算法或者三角剖分
-## 示例
-![射线法示例](https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-射线法示例.png)
 
+<center><img src="https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-射线法示例.png" width="400" title="射线法示例"></center>
+
+
+
+
+## 2.设计实现
+流程图如下：
+<center><img src="https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-流程图.png" width="600" title="流程图"></center>
+
+## 3.Java代码实现
 ### 3维向量类Vector3
 ```java
 public class Vector3 {
@@ -135,30 +140,34 @@ public class Polygon {
 ```
 
 ## 测试
+
+在多边形附近区域随机生成100个点测试，测试代码如下，
 ```java
-public static void main(String[] args) {
-    //测试pointInPolygon
-    Point2D[] points = new Point2D[6];
-    points[0] = new Point2D(0, 0);
-    points[1] = new Point2D(2, 0);
-    points[2] = new Point2D(2, 1);
-    points[3] = new Point2D(1, 1);
-    points[4] = new Point2D(1, 2);
-    points[5] = new Point2D(0, 2);
+class TestClass{
+    public static void main(String[] args) {
+        //测试pointInPolygon
+        Point2D[] points = new Point2D[6];
+        points[0] = new Point2D(0, 0);
+        points[1] = new Point2D(2, 0);
+        points[2] = new Point2D(2, 1);
+        points[3] = new Point2D(1, 1);
+        points[4] = new Point2D(1, 2);
+        points[5] = new Point2D(0, 2);
 
-    List<Point2D> pointList = new ArrayList<>();
-    for (int i = 0; i < points.length; i++) {
-        pointList.add(points[i]);
-    }
+        List<Point2D> pointList = new ArrayList<>();
+        for (int i = 0; i < points.length; i++) {
+            pointList.add(points[i]);
+        }
 
-    for (int i = 0; i < 100; i++) {
-        Point2D testPoint = new Point@D(6 * Math.random() - 2, 6 * Math.random() - 2);
-        System.out.println(testPoint + ": " + pointInPolygon(points, testPoint));
-    }
+        for (int i = 0; i < 100; i++) {
+            Point2D testPoint = new Point2D(6 * Math.random() - 2, 6 * Math.random() - 2);
+            System.out.println(testPoint + ": " + pointInPolygon(points, testPoint));
+        }
+    }   
 }
 ```
-
-![测试结果1.png](https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-测试结果1.png)
+测试结果如下，绿点代表包含；红点代表不包含。
+<center><img src="https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-测试结果1.png" width="400" title="测试结果1"></center>
 
 
 
