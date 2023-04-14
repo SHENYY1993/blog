@@ -25,6 +25,7 @@ author: SHENYY
 流程图如下：
 <center><img src="https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-流程图.png" width="600" title="流程图"></center>
 
+*【注】需要使用叉积和点积判断线段相交的知识。*
 ## 3.Java代码实现
 ### 3维向量类Vector3
 ```java
