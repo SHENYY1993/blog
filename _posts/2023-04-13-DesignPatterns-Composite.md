@@ -38,9 +38,9 @@ Composite design pattern treats each node in two ways:
 1) Composite – Composite means it can have other objects below it.
 2) leaf – leaf means it has no objects below it.
 
-![Tree Structure](https://shenyy1993.github.io/blog/assets/Composite-Design-Pattern-Diagram.png)
+![Tree Structure](https://shenyy1993.github.io/blog/assets/2023/04/Composite-Design-Pattern-Diagram.png)
 
-![UML Diagram](https://shenyy1993.github.io/blog/assets/Composite-Design-Pattern-Diagram-1.png)
+![UML Diagram](https://shenyy1993.github.io/blog/assets/2023/04/Composite-Design-Pattern-Diagram-1.png)
 
 The above figure shows a typical Composite object structure. As you can see, there can be many children to a single parent i.e. Composite, but only one parent per child.
 

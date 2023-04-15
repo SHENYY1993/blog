@@ -23,7 +23,7 @@ author: SHENYY
 
 ## 2.设计实现
 流程图如下：
-<center><img src="https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-流程图.png" width="600" title="流程图"></center>
+<center><img src="https://shenyy1993.github.io/blog/assets/2023/04/20230413-Algorithm-Polygon-Ray-Method-流程图.png" width="600" title="流程图"></center>
 
 *【注】需要使用叉积和点积判断线段相交的知识。*
 ## 3.Java代码实现
@@ -168,7 +168,7 @@ class TestClass{
 }
 ```
 测试结果如下，绿点代表包含；红点代表不包含。
-<center><img src="https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-测试结果1.png" width="400" title="测试结果1"></center>
+<center><img src="https://shenyy1993.github.io/blog/assets/2023/04/20230413-Algorithm-Polygon-Ray-Method-测试结果1.png" width="400" title="测试结果1"></center>
 
 
 

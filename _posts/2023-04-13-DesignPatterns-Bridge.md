@@ -32,7 +32,7 @@ This is a design mechanism that encapsulates an implementation class inside an i
 
 ## UML Diagram of Bridge Design Pattern
 
-![](https://shenyy1993.github.io/blog/assets/Bridge_Design.png)
+![](https://shenyy1993.github.io/blog/assets/2023/04/Bridge_Design.png)
 
 ## Elements of Bridge Design Pattern
 
@@ -48,12 +48,12 @@ The Bridge pattern is an application of the old advice, “prefer composition ov
 ## Without Bridge Design Pattern
 
 But the above solution has a problem. If you want to change the Bus class, then you may end up changing ProduceBus and AssembleBus as well and if the change is workshop specific then you may need to change the Bike class as well.
-![](https://shenyy1993.github.io/blog/assets/im2.png)
+![](https://shenyy1993.github.io/blog/assets/2023/04/im2.png)
 
 ## With Bridge Design Pattern
 
 You can solve the above problem by decoupling the Vehicle and Workshop interfaces in the below manner.
-![](https://shenyy1993.github.io/blog/assets/BridgeDesign3.png)
+![](https://shenyy1993.github.io/blog/assets/2023/04/BridgeDesign3.png)
 
 ## Advantages
 1. Bridge pattern decouple an abstraction from its implementation so that the two can vary independently.
