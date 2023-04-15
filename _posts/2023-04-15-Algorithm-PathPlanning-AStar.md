@@ -13,8 +13,8 @@ author: SHENYY
 是对Dijkstra算法的改进，引入启发式函数(Heuristics)，减少Dijkstra算法过程中收录的栅格数量，增加搜索速度。
 
 <center>
-<img src="https://shenyy1993.github.io/blog/assets/2023/04/20230414-Algorithm-PathPlanning-Dijkstra-测试结果.gif" width="400" title="Dijkstra测试结果">
-<img src="https://shenyy1993.github.io/blog/assets/2023/04/20230415-Algorithm-PathPlanning-AStar-测试结果.gif" width="400" title="A*测试结果">
+<img src="https://shenyy1993.github.io/blog/assets/2023/04/20230414-Algorithm-PathPlanning-Dijkstra-测试结果.gif" width="300" title="Dijkstra测试结果">
+<img src="https://shenyy1993.github.io/blog/assets/2023/04/20230415-Algorithm-PathPlanning-AStar-测试结果.gif" width="300" title="A*测试结果">
 <div>Dijkstra V.S. A*</div>
 </center>
 
