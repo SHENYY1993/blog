@@ -16,7 +16,7 @@ author: SHENYY
 
 射线法的优点是简单易懂，适用于凸多边形和凹多边形。但是需要注意，对于自交多边形，该方法可能会得到错误的结果。此时，更好的方法是使用其他算法，如扫描线算法或者三角剖分
 
-<center><img src="https://shenyy1993.github.io/blog/assets/20230413-Algorithm-Polygon-Ray-Method-射线法示例.png" width="400" title="射线法示例"></center>
+<center><img src="https://shenyy1993.github.io/blog/assets/2023/04/20230413-Algorithm-Polygon-Ray-Method-射线法示例.png" width="400" title="射线法示例"></center>
 
 
 
